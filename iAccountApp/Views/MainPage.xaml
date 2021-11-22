@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iAccountApp.MainPage">
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="5*" />
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Text="خوش آمدید" FontAttributes="Bold" FontSize="Large" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Margin="0, 0, 10, 0"  />
+            <Frame Grid.Row="1" BackgroundColor="White" HasShadow="False" Margin="10, 0, 10, 5" Padding="0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1.5*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="5*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Row="0" Grid.Column="1" Source="iran.png" Margin="10, 5, 0, 5" VerticalOptions="EndAndExpand" />
+                    <Label Grid.Row="0" Grid.Column="0" Text="۶٫۵۰۰٫۰۰۰ ریال" FontAttributes="Bold" FontSize="Subtitle" VerticalTextAlignment="End" HorizontalTextAlignment="Start" Margin="0, 0, 10, 0"  />
+                    <Label Grid.Row="1" Grid.Column="0" Text="مانده حساب به ریال" FontAttributes="Bold" FontSize="15" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" Margin="0, 0, 10, 30" TextColor="#6c757d"/>
+                    <Grid Grid.Row="2" Grid.ColumnSpan="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" Text="+ افزودن پول" CornerRadius="20" TextColor="#3D7DF5" BackgroundColor="#ECF2FE" Margin="0, 5, 5, 5" />
+                        <Button Grid.Column="1" Text="♳ تبدیل" CornerRadius="20" TextColor="#3D7DF5" BackgroundColor="#ECF2FE" Margin="0, 5, 5, 5" />
+                        <Button Grid.Column="2" Text="ℹ︎" FontSize="Medium" CornerRadius="20" TextColor="#3D7DF5" BackgroundColor="#ECF2FE" Margin="5" />
+                    </Grid>
+                    
+                </Grid>
+            </Frame>
+            
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>
